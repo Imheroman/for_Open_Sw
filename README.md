@@ -1,36 +1,35 @@
 # for_Open_Sw
-for open sw report
 
-this is test
+---
 
-test now
+### ***Linux Command***
 
-일단 모두 작성
+---
 
-***Linux Command***
-
-*!!top*
+#### 1) **!!top**
 
 
 
 
-*!!ps*
+#### 2) **!!ps**
 
 
 
 
-*!!jobs*
+#### 3) **!!jobs**
 
 
 
 
-*!!kill*
+#### 4) **!!kill**
+
+---
 
 
+### ***Vim Command***
 
+***
 
-***Vim Command***
-
-*!!q*
+#### 1. **!!q**
 
 
