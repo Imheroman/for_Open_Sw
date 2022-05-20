@@ -111,9 +111,9 @@ jobs 명령어는 백그라운드로 실행중인 프로세스와 현재 중지�
 
 kill 명령어란? 프로세스에 특정한 시그널을 보내는 명령어로 보통 중지시킬 수 없는 프로세스를 종료시킬 때 사용한다.
 
->kill 실행할 때 줄 수 있는 옵션
+시그널의 종류는 1~31까지 있다.
 
-시그널은 1~31까지 있다.
+>kill 실행할 때 줄 수 있는 옵션
 
 |명령어|내용|
 |:---:|:---:|
@@ -160,7 +160,7 @@ vim에서 매크로는 명령어 모드에서 q + 알파벳 을 눌러 특정 �
 10. [about_jobs2](https://starrykss.tistory.com/1694 "jobs2")
 11. [about_jobs3](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=errorsoft666&logNo=221502257635&parentCategoryNo=&categoryNo=1&viewDate=&isShowPopularPosts=false&from=postView "jobs3")
 12. [about_kill](https://121202.tistory.com/45 "kill")
-13. [about_kill](https://starrykss.tistory.com/1692?category=592475 "kill2")
+13. [about_kill2](https://starrykss.tistory.com/1692?category=592475 "kill2")
 14. [about_vim_macro](http://aboutmadlife.blogspot.com/2014/09/linux-vi-macro.html "macro")
 15. [many](https://chancoding.tistory.com/164)
 
