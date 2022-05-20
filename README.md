@@ -31,6 +31,7 @@ top를 실행하는 동안에는 주기적인 업데이트로 실시간에 근�
 |명령어|내용|
 |:---:|:---:|
 |k|kill 명령|
+|m|메모리 사용률 시각화 표시|
 |r|nice |
 |space bar|현재 화면 갱신|
 |O|화면 정렬 기준 지정|
@@ -99,15 +100,26 @@ jobs 명령어는 백그라운드로 실행중인 프로세스와 현재 중지�
 |명령어|내용|
 |:---:|:---:|
 |-l|프로세스 번호(PID)를 추가로 출력|
-|-n|상태변화를 일으킨 |
-|-p|해당 작업의 대표 프로세스의 ID만 출력|
+|-n|프로세스 그룹 중에 대표 프로세스 ID를 출력|
+|-p| 각 프로세스 ID에 대해 한 행씩 출력|
 |command|지정한 명령어를 실행|
 
+>jobs 실행시 나타나는 항목
 
+|상태|설명|
+|:---:|:---:|
+|Running|작업이 일시 중단되지 않았고 종료하지 않고 계속 진행 중임을 뜻한다.|
+|Done|작업이 완료되어 0을 반환하고 종료했음을 뜻한다.|
+|Done(code)|작업이 정상적으로 완료했으며, 0이 아닌 코드를 반환했음을 뜻한다.|
+|Stopped|작업이 일시 중단됨을 뜻한다.|
+|Stopped (SIGTSTP)|SIGTSTP 신호가 작업을 일시 중단했음을 뜻한다.|
+|Stopped (SIGSTOP)|SIGSTOP 신호가 일시 중단했음을 뜻한다.|
+|Stopped (SIGTTIN)|SIGTTIN 신호가 작업을 일시 중단했음을 뜻한다.|
+|Stopped (SIGTTOU)|SIGTTOU 신호가 작업을 일시 중단했음을 뜻한다.|
 
 ## 4) **kill**
 
->***사용법 : kill [option]  [signal]***
+>***사용법 : kill [option]  [signal] [PID(프로세스아이디)]***
 
 kill 명령어란? 프로세스에 특정한 시그널을 보내는 명령어로 보통 중지시킬 수 없는 프로세스를 종료시킬 때 사용한다.
 
@@ -122,9 +134,7 @@ kill 명령어란? 프로세스에 특정한 시그널을 보내는 명령어로
 |-9|강제종료|
 |-15|정상종료|
 |-19|즉각 정지|
-|-u|각 프로세서의 사용자 이름과 시작 시간을 보여준다.|
-|-j|작업 중심 형태로 출력한다.|
-|-s|시그널 중심 형태로 출력한다.|
+|-s|전달할 시그널의 종류를 지정한다.|
 
 ---
 
@@ -159,10 +169,12 @@ vim에서 매크로는 명령어 모드에서 q + 알파벳 을 눌러 특정 �
 9. [about_jobs](https://hbase.tistory.com/265 "jobs")
 10. [about_jobs2](https://starrykss.tistory.com/1694 "jobs2")
 11. [about_jobs3](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=errorsoft666&logNo=221502257635&parentCategoryNo=&categoryNo=1&viewDate=&isShowPopularPosts=false&from=postView "jobs3")
-12. [about_kill](https://121202.tistory.com/45 "kill")
-13. [about_kill2](https://starrykss.tistory.com/1692?category=592475 "kill2")
-14. [about_vim_macro](http://aboutmadlife.blogspot.com/2014/09/linux-vi-macro.html "macro")
-15. [many](https://chancoding.tistory.com/164)
+12. [about_jobs4](https://terms.naver.com/entry.naver?docId=4125682&cid=59321&categoryId=59321 "jobs4")
+13. [about_kill](https://121202.tistory.com/45 "kill")
+14. [about_kill2](https://starrykss.tistory.com/1692?category=592475 "kill2")
+15. [about_kill3](https://terms.naver.com/entry.naver?docId=4125687&cid=59321&categoryId=59321 "kill3")
+16. [about_vim_macro](http://aboutmadlife.blogspot.com/2014/09/linux-vi-macro.html "macro")
+17. [many](https://chancoding.tistory.com/164)
 
 
 
