@@ -10,7 +10,7 @@ top 명령어란? table of processes의 약자로  CPU와 메모리 이용에 �
 
 top를 실행하는 동안에는 주기적인 업데이트로 실시간에 근접한 내용을 보여준다.
 
-옵션 없이 입력하면 interval 간격(기본 3초)으로 화면을 갱신하며 정보를 보여주고, 서버정보, 프로세스 정보, CPU 정보, 메모리 정보 등을 나타내준다.
+옵션 없이 입력하면 기본 3초 간격으로 화면을 갱신하며 정보를 보여주고, 서버정보, 프로세스 정보, CPU 정보, 메모리 정보 등을 나타내준다.
 
 >top 실행하면서 줄 수 있는 옵션
 
@@ -58,7 +58,6 @@ ps 란? process status의 줄인말로 현재 실행중인 프로세스 목록�
 |BSD 계열|옵션 사용할 때 - 사용안 함|
 |GNU 계열|옵션 사용할 때 --(2개) 사용|
 |System V 계열|ps -ef (옵션 사용할 때 - 사용)|
-|BSD 계열|ps aux (옵션 사용할 때 - 사용안 함)|
 
 >ps 실행할 때 줄 수 있는 옵션
 
@@ -68,8 +67,10 @@ ps 란? process status의 줄인말로 현재 실행중인 프로세스 목록�
 |-a|터미널에 종속되지 않은 모든 프로세스 출력|
 |-r|현재 실행중인 프로세서를 출력|
 |-e|모든(every) 프로세스(커널 프로세스를 제외한 모든 프로세스를 출력)|
-|-f|완전한(full) 포맷(유닉스 스타일로 출력하는 옵션)|
+|-f|프로세스에 대한 자세한 정보 출력|
 |-l|긴(long) 포맷|
+|-u <username>|특정 사용자에 대한 모든 프로세스의 정보를 출력|
+|u|프로세스 소유자의 이름, CPU 사용량, 메모리 사용량 등 상세 정보 출력|
 
 >ps 실행시 나타나는 항목
 
@@ -166,15 +167,16 @@ vim에서 매크로는 명령어 모드에서 q + 알파벳 을 눌러 특정 �
 6. [about_ps](https://newstars.cloud/468 "ps")
 7. [about_ps2](https://jhnyang.tistory.com/268 "ps2")
 8. [about_ps3](https://shanepark.tistory.com/196 "ps3")
-9. [about_jobs](https://hbase.tistory.com/265 "jobs")
-10. [about_jobs2](https://starrykss.tistory.com/1694 "jobs2")
-11. [about_jobs3](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=errorsoft666&logNo=221502257635&parentCategoryNo=&categoryNo=1&viewDate=&isShowPopularPosts=false&from=postView "jobs3")
-12. [about_jobs4](https://terms.naver.com/entry.naver?docId=4125682&cid=59321&categoryId=59321 "jobs4")
-13. [about_kill](https://121202.tistory.com/45 "kill")
-14. [about_kill2](https://starrykss.tistory.com/1692?category=592475 "kill2")
-15. [about_kill3](https://terms.naver.com/entry.naver?docId=4125687&cid=59321&categoryId=59321 "kill3")
-16. [about_vim_macro](http://aboutmadlife.blogspot.com/2014/09/linux-vi-macro.html "macro")
-17. [many](https://chancoding.tistory.com/164)
+9. [about_ps4](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=jsky10503&logNo=220728880785&parentCategoryNo=&categoryNo=109&viewDate=&isShowPopularPosts=false&from=postView "ps4")
+10. [about_jobs](https://hbase.tistory.com/265 "jobs")
+11. [about_jobs2](https://starrykss.tistory.com/1694 "jobs2")
+12. [about_jobs3](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=errorsoft666&logNo=221502257635&parentCategoryNo=&categoryNo=1&viewDate=&isShowPopularPosts=false&from=postView "jobs3")
+13. [about_jobs4](https://terms.naver.com/entry.naver?docId=4125682&cid=59321&categoryId=59321 "jobs4")
+14. [about_kill](https://121202.tistory.com/45 "kill")
+15. [about_kill2](https://starrykss.tistory.com/1692?category=592475 "kill2")
+16. [about_kill3](https://terms.naver.com/entry.naver?docId=4125687&cid=59321&categoryId=59321 "kill3")
+17. [about_vim_macro](http://aboutmadlife.blogspot.com/2014/09/linux-vi-macro.html "macro")
+18. [many](https://chancoding.tistory.com/164)
 
 
 
